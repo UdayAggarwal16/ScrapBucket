@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background-color: #dfe7df54;
+}
+
+
+header{
+    height: 60px;
+    background-color:rgb(171 253 28);
+    /* border: 2px solid red; */
+}
+
+nav{
+    display: flex;
+    /* position:0px sticky; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+    height: 60px;
+    padding: 0 11px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 13px 23px;
+}
+
+/* nav ul li{
+    color: rgb(194, 42, 42);
+    /* text-decoration: none; */
+    /* font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bolder; */
+    /* background-color: black; }
+    */
+
+
+nav ul li:hover{
+    list-style: none;
+    /* transform: scale(0.8); */
+    padding: 16px 23px;
+    background-color: blue;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Archivo Narrow', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+nav ul li a:active {
+    color: rgb(194, 42, 42);
+    /* text-decoration: none; */
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bolder;
+    background-color: black;
+    
+}
+nav ul li a:hover {
+    color: white;
+    /* font-size: 1.5rem; */
+    /* text-decoration: none; */
+    font-weight: bolder;
+    
+}
+.search{
+    width: 40vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    }
+
+    .search input {
+        width: 330px;
+        height: 30px;
+        border-radius: 5px;
+        margin:0 8px 0 56px ;
+        padding: 0px 12px;
+        font-weight: bold;
+        background-color: #e1e9d9;
+         }
+
+         .formbtn{
+            width: 20vw;
+            justify-content: right;
+            display: flex;
+            align-items: center;
+           
+        }
+        
+        .formbtn a{
+            text-decoration: none;
+        }
+
+         
+
+.container{
+    min-height:calc(100vh - 50px - 12vh);
+}
+/* .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:12px  auto;
+    width: 90vw;
+    height: 350px;
+    /* color: black;
+    z-index: 1;
+    visibility: 1.8; */
+    /* border: 2px solid black; */
+    /* box-shadow: 1px 2px 5px grey; */
+    /* background-image: url(/img/slide.jpg);
+    background-size: 100% 100%; */ */
+/* } */
+
+
+.slider {
+    display: block;
+    position: absolute;
+    margin-bottom: 20px ;
+    
+}
+
+.slider img{
+    width: 100vw;
+    height: 350px;
+}
+
+.intro{
+    width: 90vw;
+    margin:  20px auto;
+    text-align: center;
+    background-color: rgba(230, 241, 64, 0.829);
+    animation-name: color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes color {
+    0%{
+        background-color: rgba(230, 241, 64, 0.829);
+    }
+
+    33.33%{
+        background-color: rgba(228, 199, 34, 0.829);
+    }
+
+    67%{
+        background-color:rgba(228, 137, 34, 0.829) ;
+        color: white;
+    }
+    
+}
+
+.card{
+    background-color: #eef5f5;
+    max-width: 90vw;
+    margin: 20px auto;
+    }
+ 
+ .cards{
+     display: flex;
+     justify-content: center;
+ }   
+
+    .card-item{
+        display: inline-flex;
+       justify-content: center;
+       align-items: center;
+        flex-direction: column;
+        margin: 0px 20px 12px 20px;
+        /* border: 2px solid blue; */
+    }
+
+    .card-item img{
+        height: 200px;
+        width: 200px;
+        /* border-radius: 0 0 0 30px; */
+        background-size: 100% 100%;
+    }
+
+    .card-item:hover {
+        z-index: 1;
+        color: black;
+        opacity: 0.9;
+        border: 2px solid grey;
+        cursor: pointer;
+        transform: scale(1.2);
+        box-shadow:0.2px 0.2px 1px rgba(83, 82, 82, 0.589);
+        
+
+    }
+
+footer{
+    
+    height: 12vh;
+    background-color: black;
+    color: white;
+}
+ 
